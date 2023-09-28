@@ -9,7 +9,7 @@ namespace PasswordGenerator
         private readonly ILogger<PasswordGeneratorWorker> _logger;
         private readonly Random                           _random;
         //Необходимо вынести это в конфигурацию
-        private          int                              _lenghtOfPassword = 16;
+        private readonly int                              _lenghtOfPassword = 16;
 
         public PasswordGeneratorWorker(ILogger<PasswordGeneratorWorker> logger)
         {
